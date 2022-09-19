@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ActivityNote">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/wrapToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:theme="@style/Theme.Notepad.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Notepad.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/wrapToolbar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/border_for_edit"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="10dp"
+                android:layout_marginStart="20dp"
+                android:ems="17"
+                android:maxLength="80"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:hint="@string/title"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:autofillHints="@string/title" />
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                app:layout_constraintTop_toBottomOf="@+id/back_title"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border_for_edit"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:hint="@string/note"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLines="10"
+                android:text=""
+                android:layout_marginBottom="40dp"
+                android:textSize="20sp"
+                android:autofillHints="@string/note" />
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

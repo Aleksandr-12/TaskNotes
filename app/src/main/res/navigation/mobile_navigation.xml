@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.notepad.Notepad.Fragments.note.NoteFragment"
+        android:label="@string/note"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.notepad.Notepad.Fragments.favoriteNote.favoriteNoteFragment"
+        android:label="@string/favoriteNote"
+        tools:layout="@layout/fragment_favorite_note" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.notepad.Notepad.Fragments.TasksServer.TasksFragment"
+        android:label="@string/server_task"
+        tools:layout="@layout/fragment_tasks" />
+</navigation>

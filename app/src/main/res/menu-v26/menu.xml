@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/save"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:iconTint="@color/white"
+        android:title="@string/save" />
+    <item
+        android:id="@+id/update"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/loading_foreground"
+        android:iconTint="@color/white"
+        android:title="@string/update" />
+    <item
+        android:id="@+id/register"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/register_foreground"
+        android:iconTint="@color/white"
+        android:title="@string/registration" />
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/exit_foreground"
+        android:title="@string/exit" />
+</menu>

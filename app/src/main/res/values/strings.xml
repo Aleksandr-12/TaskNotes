@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="note">Запись</string>
+    <string name="title_activity_note">ActivityNote</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title">Заголовок</string>
+    <string name="save">Сохранить</string>
+    <string name="Error">Ошибка</string>
+    <string name="add">Добавить</string>
+    <string name="favoriteNote">Избранные записи</string>
+    <string name="task">Задача</string>
+    <string name="add_task">Добавить задачу</string>
+    <string name="complete">Выполнено</string>
+    <string name="noComplete">Не выполненно</string>
+    <string name="update">Обновить</string>
+    <string name="registration">Регистрация</string>
+    <string name="authorization">Авторизация</string>
+    <string name="server_task">Задачи с сервера</string>
+    <string name="success_register">Успешная регистрация</string>
+    <string name="error_register">Ошибка регистрации</string>
+    <string name="success_authorization">Успешная авторизация</string>
+    <string name="error_authorization">Ошибка авторизации</string>
+    <string name="exit">Выход</string>
+    <string name="delete">Удалить</string>
+    <string name="no">Нет</string>
+    <string name="isDeleteNote">Удалить запись?</string>
+    <string name="task_is_complete">Завершить задачу?</string>
+    <string name="yes">Да</string>
+    <string name="success">Успешное выполнение задачи</string>
+    <string name="error">Ошибка</string>
+    <string name="makeSuccess">Успешное создание задачи</string>
+    <string name="deleteSuccess">Успешное удаление задачи</string>
+    <string name="task_is_completed">Задача уже завершена</string>
+</resources>
