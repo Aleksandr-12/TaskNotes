@@ -78,19 +78,14 @@ class ActivityRegister  : AppCompatActivity() {
         mService.registerUser(name,password, email).enqueue(object :
             Callback<Register> {
             override fun onFailure(call: Call<Register>, t: Throwable) {
-                Log.d("failer", (call.toString()) + " "+t.localizedMessage)
                 Toast.makeText(this@ActivityRegister, R.string.error_register, Toast.LENGTH_SHORT)
                     .show()
             }
             @SuppressLint("LongLogTag")
             override fun onResponse(call: Call<Register>, response: Response<Register>) {
                 val g = (response.body() as Register)
-                g.user_id
-                Log.d("succes", ((response.body() as Register).toString()))
-                 Log.d("succes2", g.user_id.toString())
                 g.result?.let { Log.d("succes3", it) }
                 prefs.User_id = g.user_id!!
-                Log.d("succes2prefs?.USER_ID  /", prefs.User_id.toString())
                 progressBar!!.visibility = View.INVISIBLE
                 Toast.makeText(this@ActivityRegister, R.string.success_register, Toast.LENGTH_SHORT)
                 .show()
